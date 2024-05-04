@@ -176,10 +176,9 @@ button.active {
 }
 
 .project-image {
-    width: 100%; /* Makes the image responsive within its container */
-    max-width: 50vw; /* Limits the size of the image */
-    height: auto; /* Maintains aspect ratio */
-    margin-bottom: 1vh; /* Space between the image and the text */
+    width: 35vw; /* Limits the size of the image */
+    height: 35vh; /* Maintains aspect ratio */
+    margin-bottom: 0.5vh; /* Space between the image and the text */
 }
 
 .project p {
