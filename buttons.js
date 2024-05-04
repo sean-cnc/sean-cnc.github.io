@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    window.addEventListener('scroll', setActiveOnScroll);
+
     function activateLink(sectionId) {
         navLinks.forEach(link => {
             link.classList.remove('active');
