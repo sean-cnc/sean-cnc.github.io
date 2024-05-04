@@ -23,28 +23,28 @@ nav {
     border-bottom: 0.2vh solid white; /* Solid white line at the bottom */
 }
 
-button, nav a.button { /* Apply styles uniformly to both buttons and styled links */
-    padding: 1vh 2vh;
-    margin: 1vh;
+button, nav a.button {
+    padding: 0.8vh 1.5vw;  /* Reduced from 1vh 2vw */
+    margin: 1vh 1vw;       /* You can adjust margin if needed */
     cursor: pointer;
-    color: white; /* Ensures text is white */
-    background-color: transparent; /* Makes button background transparent */
-    font-family: 'Sanchez', serif; /* Sets the font to Sanchez */
-    font-size: 1.8vh; /* Uniform font size */
-    line-height: 1.5; /* Uniform line height */
-    height: 5vh; /* Uniform height */
+    color: white;          /* Ensures text is white */
+    background-color: transparent; /* Keeps button background transparent */
+    font-family: 'Sanchez', serif; /* Continues using the Sanchez font */
+    font-size: 1.6vh;      /* Slightly reduced from 1.8vh */
+    height: 4vh;           /* Optional: if previously set to a larger height */
     border: none;
     text-align: center;
-    text-decoration: none; /* Remove underline from links */
-    display: inline-block; /* Ensures alignment and spacing */
-    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
-    vertical-align: middle; /* Aligns text vertically */
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s; /* Keeps the smooth transition */
+    vertical-align: middle;
 }
 
 button:hover, nav a.button:hover {
     background-color: white; /* Changes background to white on hover */
-    color: #000080; /* Changes text color to navy on hover */
+    color: #000080;          /* Changes text color to navy on hover */
 }
+
 
 section {
     width: 100%;
