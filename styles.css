@@ -8,30 +8,31 @@ body, html {
     height: 100%;
     background-color: #000435;
 }
-
 nav {
     position: fixed;
-    top: 0.5vh; /* Smaller value because 5px is minimal */
+
+    top: 0.5vh; 
+
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center; /* Ensures vertical alignment of all items */
+    justify-content: space-around; /* Distributes buttons evenly */
     background-color: #020035;
     box-shadow: 0 0.2vh 0.5vh rgba(0,0,0,0.1);
-    padding: 1vh 0; /* Adjusted from 10px to vh for responsive padding */
-    border-bottom: 0.2vh solid white;
+    padding: 1vh 0;
+    border-bottom: 0.2vh solid white; /* Solid white line at the bottom */
 }
 
 button, nav a.button { /* Apply styles uniformly to both buttons and styled links */
-    padding: 1vh 2vw; /* Using vh and vw for padding */
-    margin: 1vh 1vw;
+    padding: 1vh 2vh;
+    margin: 1vh;
     cursor: pointer;
     color: white; /* Ensures text is white */
     background-color: transparent; /* Makes button background transparent */
     font-family: 'Sanchez', serif; /* Sets the font to Sanchez */
-    font-size: 1.8vh; /* Using vh for a more scalable font size */
+    font-size: 1.8vh; /* Uniform font size */
     line-height: 1.5; /* Uniform line height */
-    height: 5vh;
+    height: 5vh; /* Uniform height */
     border: none;
     text-align: center;
     text-decoration: none; /* Remove underline from links */
@@ -56,7 +57,7 @@ section {
 }
 
 button.active {
-    border-bottom: 2px solid white; /* Adds a white underline to the active button */
+    border-bottom: 0.2vh solid white; /* Adds a white underline to the active button */
 }
 
 .container {
@@ -64,11 +65,11 @@ button.active {
     grid-template-columns: 1fr 2fr; /* 1/3 for text and 2/3 for image */
     height: 100vh; /* Full viewport height */
     align-items: center; /* Aligns content vertically center */
-    gap: 20px; /* Optional: adds some space between text and image */
+    gap: 2vh; /* Optional: adds some space between text and image */
 }
 
 .text-block {
-    padding: 20px; /* Adds padding inside the text block for spacing */
+    padding: 2vh; /* Adds padding inside the text block for spacing */
     color: white; /* As per your color scheme */
 }
 
@@ -77,22 +78,22 @@ button.active {
     align-items: center;  /* Centers the items vertically */
     justify-content: space-between; /* Adjusts the space distribution */
     height: 100vh;
-    padding: 20px;  /* Adds padding around the entire container */
+    padding: 2vh;  /* Adds padding around the entire container */
 }
 
 .meshot {
-    width: 66.66vw; /* Adjust the width if necessary */
+    width: 66.66%; /* Adjust the width if necessary */
     height: auto; /* Maintains the aspect ratio */
 }
 
 .meshot {
     width: 60;  /* Takes up 2/3 of the container */
     height: auto;  /* Maintains the aspect ratio */
-    margin: 20px;  /* Adds margin around the image */
+    margin: 2vh;  /* Adds margin around the image */
 }
 
 .text-block h2 {
-    margin-bottom: 25px;  /* Adds space below the h2 */
+    margin-bottom: 2.5vh;  /* Adds space below the h2 */
 }
 
 
@@ -101,19 +102,18 @@ button.active {
     align-items: center;  /* Centers the items vertically */
     justify-content: space-between; /* Adjusts the space distribution */
     height: 300vh;
-    padding: 10px;  /* Adds padding around the entire container */
+    padding: 1vh;  /* Adds padding around the entire container */
 }
 
 .aboutshot {
-    width: 50vw; /* Changed from percentage to vw */
-    height: auto;
-    margin: 2vw; /* Consistent margin using vw */
+    width: 40%; /* Adjust the width if necessary */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 .aboutshot {
     width: 50;  /* Takes up 2/3 of the container */
     height: auto;  /* Maintains the aspect ratio */
-    margin: 20px;  /* Adds margin around the image */
+    margin: 2vh;  /* Adds margin around the image */
 }
 
 .text-block {
@@ -122,41 +122,31 @@ button.active {
 }
 
 .text-block p {
-    font-size: 1.8vh; /* Adjust font size based on height of the viewport */
+    font-size: 1.8vh;
     line-height: 1.6;
-    margin-bottom: 2vh; /* Space using vh */
-    padding: 1vh; /* Padding using vh */
+    margin-bottom: 2vh;  /* Add space after each paragraph for clear separation */
+    padding: 1vh; /* Optional: Adds padding inside each paragraph block */
+
 }
 
 .experience-item {
     display: flex;
     align-items: center; /* Centers items vertically within each flex container */
-    margin-bottom: 20px; /* Adds space between each experience item */
+    margin-bottom: 2vh; /* Adds space between each experience item */
 }
 
 .experience-image {
-    width: 10vw; /* Adjust the width proportionally using vw */
-    height: auto;
-    margin-right: 2vw;
+    width: 10vh; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2vh; /* Adds space between the image and the text */
 }
 
 .experience-title {
-    font-size: 18px; /* Specify the font size */
+    font-size: 1.8vh; /* Specify the font size */
     font-weight: bold; /* Optional: make the title bold */
 }
 
 /* Style the hr tag if necessary */
 hr {
-    margin-top: 20px; /* Space above the horizontal line */
-}
-
-/* Responsive adjustments for smaller devices */
-@media (max-width: 768px) {
-    button, nav a.button {
-        font-size: 4vw; /* Larger font size on smaller screens */
-    }
-
-    .experience-image {
-        width: 20vw; /* Larger proportionate size on smaller screens */
-    }
+    margin-top: 2vh; /* Space above the horizontal line */
 }
