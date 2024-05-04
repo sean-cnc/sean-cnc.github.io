@@ -6,7 +6,7 @@
 body, html {
     width: 100%;
     height: 100%;
-    background-color: #000435;
+    background-color: #131122;
 }
 nav {
     position: fixed;
@@ -17,7 +17,7 @@ nav {
     display: flex;
     align-items: center; /* Ensures vertical alignment of all items */
     justify-content: space-around; /* Distributes buttons evenly */
-    background-color: #020035;
+    background-color: #131122;
     box-shadow: 0 0.2vh 0.5vh rgba(0,0,0,0.1);
     padding: 1vh 0;
     border-bottom: 0.2vh solid white; /* Solid white line at the bottom */
@@ -154,10 +154,37 @@ button.active {
 }
 
 .experience-title {
-    margin-top: 10px; /* Space between the image and the title */
-    font-size: 18px; /* Appropriate font size for readability */
+    margin-top: 1vh; /* Space between the image and the title */
+    font-size: 1.8vh; /* Appropriate font size for readability */
 }
 
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-template-rows: repeat(2, 1fr); /* Creates two rows */
+    gap: 2vw; /* Space between grid items */
+    padding: 2vh; /* Padding around the grid container */
+    align-items: center; /* Centers items vertically in their cells */
+    justify-items: center; /* Centers items horizontally in their cells */
+    text-align: center; /* Ensures text within each block is centered */
+}
+
+.project {
+
+    border-radius: 8vh; /* Rounded corners for aesthetics */
+    padding: 1.5vw; /* Padding within each project block */
+}
+
+.project-image {
+    width: 100%; /* Makes the image responsive within its container */
+    max-width: 50vw; /* Limits the size of the image */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 1vh; /* Space between the image and the text */
+}
+
+.project p {
+    margin: 0; /* Removes default margin from paragraphs */
+}
 
 
 
