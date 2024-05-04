@@ -129,22 +129,39 @@ button.active {
 
 }
 
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 2vw; /* Optional: space between the columns */
+    align-items: center; /* Align items to the start of each cell */
+    text-align: center; /* Center text below images */
+    padding: 2vh; /* Padding around the entire grid */
+    width: 100%;
+    margin: auto;
+}
+
 .experience-item {
     display: flex;
-    align-items: center; /* Centers items vertically within each flex container */
-    margin-bottom: 2vh; /* Adds space between each experience item */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .experience-image {
-    width: 10vh; /* Adjust width as necessary */
+    width: 100%; /* Make images fill their container */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 2vh; /* Adds space between the image and the text */
+    max-width: 40vw; /* Limit maximum width to keep images reasonable */
+    max-height: 40vh;
 }
 
 .experience-title {
-    font-size: 1.8vh; /* Specify the font size */
-    font-weight: bold; /* Optional: make the title bold */
+    margin-top: 10px; /* Space between the image and the title */
+    font-size: 18px; /* Appropriate font size for readability */
 }
+
+
+
+
+
 
 /* Style the hr tag if necessary */
 hr {
@@ -156,4 +173,9 @@ hr {
         padding: 2vw 3vw; /* Larger padding for better touch target size on smaller devices */
         font-size: 3.5vw; /* Larger font size for better readability on smaller screens */
     }
+
+
+
+
+
 }
