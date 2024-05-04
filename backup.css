@@ -8,30 +8,31 @@ body, html {
     height: 100%;
     background-color: #000435;
 }
-
 nav {
     position: fixed;
-    top: 0.5vh; /* Smaller value because 5px is minimal */
+
+    top: 5px; 
+
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center; /* Ensures vertical alignment of all items */
+    justify-content: space-around; /* Distributes buttons evenly */
     background-color: #020035;
-    box-shadow: 0 0.2vh 0.5vh rgba(0,0,0,0.1);
-    padding: 1vh 0; /* Adjusted from 10px to vh for responsive padding */
-    border-bottom: 0.2vh solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    border-bottom: 2px solid white; /* Solid white line at the bottom */
 }
 
 button, nav a.button { /* Apply styles uniformly to both buttons and styled links */
-    padding: 1vh 2vw; /* Using vh and vw for padding */
-    margin: 1vh 1vw;
+    padding: 10px 20px;
+    margin: 10px;
     cursor: pointer;
     color: white; /* Ensures text is white */
     background-color: transparent; /* Makes button background transparent */
     font-family: 'Sanchez', serif; /* Sets the font to Sanchez */
-    font-size: 1.8vh; /* Using vh for a more scalable font size */
+    font-size: 18px; /* Uniform font size */
     line-height: 1.5; /* Uniform line height */
-    height: 5vh;
+    height: 50px; /* Uniform height */
     border: none;
     text-align: center;
     text-decoration: none; /* Remove underline from links */
@@ -81,7 +82,7 @@ button.active {
 }
 
 .meshot {
-    width: 66.66vw; /* Adjust the width if necessary */
+    width: 66.66%; /* Adjust the width if necessary */
     height: auto; /* Maintains the aspect ratio */
 }
 
@@ -105,9 +106,8 @@ button.active {
 }
 
 .aboutshot {
-    width: 50vw; /* Changed from percentage to vw */
-    height: auto;
-    margin: 2vw; /* Consistent margin using vw */
+    width: 40%; /* Adjust the width if necessary */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 .aboutshot {
@@ -122,10 +122,11 @@ button.active {
 }
 
 .text-block p {
-    font-size: 1.8vh; /* Adjust font size based on height of the viewport */
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 2vh; /* Space using vh */
-    padding: 1vh; /* Padding using vh */
+    margin-bottom: 20px;  /* Add space after each paragraph for clear separation */
+    padding: 10px; /* Optional: Adds padding inside each paragraph block */
+
 }
 
 .experience-item {
@@ -135,9 +136,9 @@ button.active {
 }
 
 .experience-image {
-    width: 10vw; /* Adjust the width proportionally using vw */
-    height: auto;
-    margin-right: 2vw;
+    width: 100px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Adds space between the image and the text */
 }
 
 .experience-title {
@@ -148,15 +149,4 @@ button.active {
 /* Style the hr tag if necessary */
 hr {
     margin-top: 20px; /* Space above the horizontal line */
-}
-
-/* Responsive adjustments for smaller devices */
-@media (max-width: 768px) {
-    button, nav a.button {
-        font-size: 4vw; /* Larger font size on smaller screens */
-    }
-
-    .experience-image {
-        width: 20vw; /* Larger proportionate size on smaller screens */
-    }
 }
